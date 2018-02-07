@@ -1,5 +1,5 @@
 # StoryWriter
-A that aims to provide software for story writers.
+A project that aims to provide software for story writers.
 
-This project is for gaining experience in software engineering.
+This project is for gaining experience in software engineering and working with others.
 
