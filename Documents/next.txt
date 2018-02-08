@@ -1,0 +1,2 @@
+After a new story has been saved and the ini updated,
+	set the name and path of the live story object in memory.

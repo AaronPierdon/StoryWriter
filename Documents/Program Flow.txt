@@ -1,0 +1,22 @@
+Start Program
+
+	Search defaultDIR config file.
+	if(exists)
+		check for last saved path
+		if(exists)
+			load the file indicated by the last saved path
+		if(last saved does not exist)
+	
+			load the file in the defaultDIR
+			if(a save file exists)
+				load it
+			if(a save file !exist)
+				notify user that he or she must add a story
+				hide all controls except add new story
+	if(no config file exists)
+		create one
+		notify user that he or she must add a story
+		hide all controls except add new story
+	
+
+

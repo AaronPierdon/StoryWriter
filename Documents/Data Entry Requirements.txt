@@ -1,0 +1,76 @@
+// Forms
+
+	Create new story
+		user specifies location
+		user specifies name
+		user needs to start using this story
+
+	Open story
+		user specifies location
+		user specifies name
+		user needs to start using this story
+
+	Save Story
+		uses the current story's path and file name properites 
+			for the file update as the file already exists.
+	
+	Add Character
+		allow for input of name, description, and keywords
+	Add Event
+		allow for input of name, description, and keywords
+	Add Location
+		allow for input of name, description, and keywords
+	Add Thing
+		allow for input of name, description, and keywords
+
+
+
+	
+// Data
+
+	// Default directory and location of a default config file
+	config.ini
+
+	// This is the main, top-level data structure. It even has a few properties that help find
+	// A corresponding file in perm. storage.
+	Story
+
+		// Characters of a story
+		Character
+			Name... name of the entity
+			Keywords for associations. 1 list of keywords per object type. 1 extra list for other elements.
+			Description... maybe  story content, but regardless, is the word content that describes this entity
+	
+		// Events of a story
+		Event
+			Name... name of the entity
+			Keywords for associations. 1 list of keywords per object type. 1 extra list for other elements.
+			Description... maybe  story content, but regardless, is the word content that describes this entity
+
+		// Locations of a story
+		Location
+			Name... name of the entity
+			Keywords for associations. 1 list of keywords per object type. 1 extra list for other elements.
+			Description... maybe  story content, but regardless, is the word content that describes this entity
+
+		// Things of a story... the stuff that's not a character, event, or location.
+		Thing
+			Name... name of the entity
+			Keywords for associations. 1 list of keywords per object type. 1 extra list for other elements.
+			Description... maybe  story content, but regardless, is the word content that describes this entity
+
+// Controllers
+
+	Main Controller handles the runtime of the program.
+		Has references to all view forms and data structures.
+		Passes control and program flow to other controllers.
+
+	SaveController handles saving data to file
+
+	LoadController handles loading data from file
+	
+	
+
+
+	
+		
