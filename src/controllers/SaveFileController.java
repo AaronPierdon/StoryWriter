@@ -1,7 +1,8 @@
 /*
  * Developer:  Aaron Pierdon
  * Date:       Jan 27, 2018
-Expression licensePrefx is undefined on line 6, column 3 in Templates/Licenses/license-default.txt.Description: This class/file
+ * Description:
+
  */
 
 package controllers;
