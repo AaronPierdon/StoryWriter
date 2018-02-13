@@ -1,0 +1,78 @@
+@import url('//fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+
+.book-summary {
+  font-size: 14px;
+  font-family: "Open Sans";
+}
+
+.book-summary ul.summary li.active>a {
+  color: #38a1df;
+  font-weight: bold;
+}
+
+.book-summary .divider, .gitbook-link {
+  display: none !important;
+}
+
+.book-header h1 {
+  display: none;
+}
+
+.page-inner {
+  max-width: 1200px;
+  padding-top: 0;
+}
+
+.navigation-prev, .navigation-next {
+  display: none;
+}
+
+#toc, .toc {
+  font-size: 1.1em;
+}
+
+.markdown-section, .search-results {
+  color: #50595E;
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5 {
+  color: #38a1df;
+  font-weight: normal;
+  margin-top: 0.9em;
+  margin-bottom: 0.4em;
+}
+
+.markdown-section h1 {
+  font-weight: bold;
+}
+
+.markdown-section a {
+  color: #38a1df;
+}
+
+.markdown-section li p {
+  margin-bottom: 0.3em;
+}
+
+.markdown-section pre {
+  line-height: 1.1em;
+  border-radius: 7px;
+}
+
+.markdown-section code {
+  border-radius: 7px;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 1em;
+}
