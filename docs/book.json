@@ -1,0 +1,27 @@
+{
+  "plugins": [
+    "anchorjs",
+    "back-to-top-button",
+    "hints",
+    "search-plus",
+    "etoc",
+    "-search",
+    "-lunr",
+    "-sharing",
+    "expandable-chapters"
+  ],
+  "pluginsConfig": {
+    "etoc": {
+      "mindepth": 1,
+      "maxdepth": 4,
+      "notoc": true
+    },
+    "anchorjs": {
+      "placement": "right",
+      "visible": "touch"
+    }
+  },
+  "structure": {
+    "readme":"introduction.md"
+  }
+}
