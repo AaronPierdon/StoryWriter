@@ -13,19 +13,19 @@ A program that helps a user write, organize, and analyze a story.
 An application window and thread that maintains all other views – to be placed inside the application window as panes,
 including navigation, view, and detail panes.
 
-### Data Entry
+#### Data Entry
 
 A program that provides a user with a set of data entry forms for inputting new elements in the story, like characters.
 The user should be able to save these inputs permanently. The user should be able to navigate the story and find and
 read information about objects that have been input, like characters.
 
-### Story Editor
+#### Story Editor
 
 A program that provides a user with a text editor. The story will be organized in chapter objects, each of which is
 like a mini-document. The user should be able to save this typed input. The user should also be able to navigate the
 story and find, read, and edit the typed input.
 
-### Data Mining
+#### Data Mining
 
 A program that parses the story structures, both the text-based and object based - like chapter content and character
 lists, respectively. The result of this parsing will take a dynamic and very cool form. The form will be a tube or line.
