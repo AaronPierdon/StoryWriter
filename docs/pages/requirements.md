@@ -55,12 +55,20 @@ between other objects with which a selected object is associated. This needs wor
     4. A story object
 3. Controllers
     1. Main Controller
-    2. Load Story File Controller
-    3. Save Story File Controller
+    2. Data Controllers
+        i. StorageController for saving/loading data to/from perm. storage.
+        ii. DataController for keeping a reference to and control of the data model (a Story.java object)
+    3. View Controllers
+        i. MainFXMLController (Maybe have MainFXMLController = MainController)
+            a. Will handle events from user interaction with the top toolbar or the main BorderPane top node.
+        ii. NavigationPaneController (Maybe a Thread or TimerTask object to monitor state)
+        iii. ViewPaneController (Maybe a Thread or TimerTask object to monitor state)
+        iiii. DetailsPaneController (Maybe a Thread or TimerTask object to monitor state)
+        
 
 ### Data Entry Requirements
 
-1. Views (Refer to GUI specifications document for more info on the views)
+1. Views (Should appear in the main border pane's center node) (Look in GUI specifications for more info)
     1. Create new story
     2. Open story
     3. Save story dialog
