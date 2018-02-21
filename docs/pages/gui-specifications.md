@@ -6,7 +6,7 @@
 
 The main program will be a javafx application that contains a BorderPane. 
 
-1. The top node will be a menu structrure. 
+1. The top node will be a menubar structrure. 
 
 2. The left-most or navigation node will host a tree structure that can be clicked and expanded to represent the data model that is the story. 
 
