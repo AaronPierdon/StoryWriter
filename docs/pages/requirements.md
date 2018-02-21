@@ -44,10 +44,10 @@ between other objects with which a selected object is associated. This needs wor
 ### Main Program Requirements
 
 1. Views (Refer to GUI specifications document for more info on the views)
-    1. Top Toolbar
-    2. Navigation Pane
-    3. Content Area
-    4. Details Pane
+    1. TopToolbarPane
+    2. NavigationPane
+    3. ViewPane
+    4. DetailsPane
 2. Data
     1. Default Directory
     2. Initialization File in Default Directory
