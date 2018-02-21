@@ -1,3 +1,4 @@
+
 # Controller Specifications
 
 
@@ -28,6 +29,20 @@
 
 ## 5. MenuBarController
   
-
+  1. Controls the view of the MenuBar.fxml and handles any events that are invoked via the MenuBar interface.
+  2. Has a MainFXMLController that can be used to populate the applications root BorderPane's TOP node as well as request other view-oriented procedures that are handles by the MainFXMLController.
   
+## 6. NavigationPaneController
 
+  1. Controls the view of the ViewPaneController.fxml and handles any events that are invoked via the ViewPaneController interface.
+  2. Has a MainFXMLController that can be used to populate the applications root BorderPane's LEFT node as well as request other view-oriented procedures that are handled by the MainFXMLController.
+  
+## 7. ViewPaneController
+
+  1. Controls the view of the NavigationPane.fxml and handles any events that are invoked via the NavigationPane interface.
+  2. Has a MainFXMLController that can be used to populate the applications root BorderPane's CENTER node as well as request other view-oriented procedures that are handled by the MainFXMLController.
+
+## 8. DetailsPaneController
+
+  1. Controls the view of the DetailsPaneController.fxml and handles any events that are invoked via the DetailsPaneController interface.
+  2. Has a MainFXMLController that can be used to populate the applications root BorderPane's RIGHT node as well as request other view-oriented procedures that are handled by the MainFXMLController.
