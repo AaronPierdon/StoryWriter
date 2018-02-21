@@ -11,7 +11,7 @@ A program that helps a user write, organize, and analyze a story.
 ### Main Program
 
 An application window and thread that maintains all other views – to be placed inside the application window as panes,
-like navigation, content area, top toolbar, and the details pane.
+including navigation, view, and detail panes.
 
 ### Data Entry
 
