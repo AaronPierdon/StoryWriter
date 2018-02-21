@@ -21,4 +21,5 @@ The main program will be a javafx application that contains a BorderPane.
 
 
 
-![Main GUI](/gui-examples/main-gui.jpg)
+![Main GUI 1](/gui-examples/filemenu.png)
+![Main GUI 2](/gui-examples/viewmenu.png)
