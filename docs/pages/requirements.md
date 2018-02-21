@@ -29,6 +29,7 @@ story and find, read, and edit the typed input.
 
 A program that parses the story structures, both the text-based and object based - like chapter content and character
 lists, respectively. The result of this parsing will take a dynamic and very cool form. The form will be a tube or line.
+
 This line will be the timeline of the story based on the chronology of event objects the user input or, by default, the
 sequencing of chapters. A user can zoom in on this line. This line transforms into a pipeline with icons floating above
 and around it with lines pinpointing those icons, point of origin. These icons could be characters or events. The points
