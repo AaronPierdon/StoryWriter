@@ -12,7 +12,7 @@ import dataModel.Story;
 
 public class MainController {
     
-    // The data model that is a Story Object
+    // This controller encapsulates and manages the data model
     DataController dataController;
     
     // Constructor
