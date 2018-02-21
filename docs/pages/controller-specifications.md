@@ -27,7 +27,7 @@
   2. Has controllers that load and handle the .fxml files that make up the entire Program.
     1. Each sub-FXMLController will handle one .fxml file and the actions generated from the interaction with that .fxml file's GUI.
 
-## 5. MenuBarController
+## 5. MenuPaneController
   
   1. Controls the view of the MenuBar.fxml and handles any events that are invoked via the MenuBar interface.
   2. Has a MainFXMLController that can be used to populate the applications root BorderPane's TOP node as well as request other view-oriented procedures that are handles by the MainFXMLController.
