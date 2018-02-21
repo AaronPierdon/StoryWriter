@@ -15,30 +15,30 @@ including navigation, view, and detail panes.
 
 1. Data Entry
 
-A program that provides a user with a set of data entry forms for inputting new elements in the story, like characters.
-The user should be able to save these inputs permanently. The user should be able to navigate the story and find and
-read information about objects that have been input, like characters.
+    A program that provides a user with a set of data entry forms for inputting new elements in the story, like characters.
+    The user should be able to save these inputs permanently. The user should be able to navigate the story and find and
+    read information about objects that have been input, like characters.
 
 2. Story Editor
 
-A program that provides a user with a text editor. The story will be organized in chapter objects, each of which is
-like a mini-document. The user should be able to save this typed input. The user should also be able to navigate the
-story and find, read, and edit the typed input.
+    A program that provides a user with a text editor. The story will be organized in chapter objects, each of which is
+    like a mini-document. The user should be able to save this typed input. The user should also be able to navigate the
+    story and find, read, and edit the typed input.
 
 3. Data Mining
 
-A program that parses the story structures, both the text-based and object based - like chapter content and character
-lists, respectively. The result of this parsing will take a dynamic and very cool form. The form will be a tube or line.
+    A program that parses the story structures, both the text-based and object based - like chapter content and character
+    lists, respectively. The result of this parsing will take a dynamic and very cool form. The form will be a tube or line.
 
-This line will be the timeline of the story based on the chronology of event objects the user input or, by default, the
-sequencing of chapters. A user can zoom in on this line. This line transforms into a pipeline with icons floating above
-and around it with lines pinpointing those icons, point of origin. These icons could be characters or events. The points
-of origins are where the program has parsed information about those objects and understands at which points on the timeline
-they are active. This generates a requirement for data entry. A user must either specify that an object is relevant or
-active in all chapters, or he or she must select the chapters that object is active in.
+    This line will be the timeline of the story based on the chronology of event objects the user input or, by default, the
+    sequencing of chapters. A user can zoom in on this line. This line transforms into a pipeline with icons floating above
+    and around it with lines pinpointing those icons, point of origin. These icons could be characters or events. The points
+    of origins are where the program has parsed information about those objects and understands at which points on the timeline
+    they are active. This generates a requirement for data entry. A user must either specify that an object is relevant or
+    active in all chapters, or he or she must select the chapters that object is active in.
 
-Also, as a use zooms in and sees objects that are active at different points in the timeline, there will also be lines
-between other objects with which a selected object is associated. This needs work.
+    Also, as a use zooms in and sees objects that are active at different points in the timeline, there will also be lines
+    between other objects with which a selected object is associated. This needs work.
 
 ## Requirements for Each Program Section
 
