@@ -57,14 +57,14 @@ between other objects with which a selected object is associated. This needs wor
 3. Controllers
     1. Main Controller
     2. Data Controllers
-        i. StorageController for saving/loading data to/from perm. storage.
-        ii. DataController for keeping a reference to and control of the data model (a Story.java object)
+        1. StorageController for saving/loading data to/from perm. storage.
+        2. DataController for keeping a reference to and control of the data model (a Story.java object)
     3. View Controllers
-        i. MainFXMLController (Maybe have MainFXMLController = MainController)
+        1. MainFXMLController (Maybe have MainFXMLController = MainController)
             a. Will handle events from user interaction with the top toolbar or the main BorderPane top node.
-        ii. NavigationPaneController (Maybe a Thread or TimerTask object to monitor state)
-        iii. ViewPaneController (Maybe a Thread or TimerTask object to monitor state)
-        iiii. DetailsPaneController (Maybe a Thread or TimerTask object to monitor state)
+        2. NavigationPaneController (Maybe a Thread or TimerTask object to monitor state)
+        3. ViewPaneController (Maybe a Thread or TimerTask object to monitor state)
+        4. DetailsPaneController (Maybe a Thread or TimerTask object to monitor state)
         
 
 ### Data Entry Requirements
