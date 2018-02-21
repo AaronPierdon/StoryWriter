@@ -4,11 +4,14 @@
 
 ## Main Program GUI
 
-The main program will be a javafx application that contains a BorderPane. All GUI’s and program content will be inside
-the BorderPane, except on-the-spot dialogs like those for errors. Most of the GUI regions will present
-static – non-changing - controls like buttons or text. For instance, the Top Tool Bar will always contain the buttons,
-new, open, and save; however, the content pane may contain buttons and will most always contain text information unless
-it’s blank. Each section is further explained after the following brief list.
+The main program will be a javafx application that contains a BorderPane. The top node will be a menu structrure. 
+
+1. The left-most or navigation node will host a tree structure that can be clicked and expanded to represent the data model that is the story. The center node will be the view pane. 
+
+    1. This will contain dynaimc content based on what is selected or even, not selected, in the navigation pane. 
+
+2. The right-most or details pane will contain information about something at all times. 
+    1. This "something" can be the path to the current story's file, the name of the story, the details of the currently selected node in the navigation pane's tree structure, or the currently selected element in the view pane.
 
 
 ## Main GUI Areas that Go In Main Program’s BorderPane
