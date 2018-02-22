@@ -15,6 +15,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
@@ -52,9 +53,10 @@ public class Storywriter extends Application{
         // Get the root .fxml object/file and set as the primary stage's scene
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/MainFXML.fxml"));
         loader.setController(this.mainController.getFXMLController());
-        BorderPane root = loader.load();
+        VBox root = loader.load();
         
         Scene scene = new Scene(root);
+        stage.setScene(scene);
         stage.show();
         
         // Control is now that of the main fxml controller by way of handling
