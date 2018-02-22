@@ -12,6 +12,9 @@ import controllers.MainController;
 import dataModel.Story;
 import javafx.application.Application;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
@@ -47,7 +50,15 @@ public class Storywriter extends Application{
         
         
         // Get the root .fxml object/file and set as the primary stage's scene
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/MainFXML.fxml"));
+        loader.setController(this.mainController.getFXMLController());
+        BorderPane root = loader.load();
         
+        Scene scene = new Scene(root);
+        stage.show();
+        
+        // Control is now that of the main fxml controller by way of handling
+        // Interaction withthe main fxml view and it's sub views
         
     }
     
@@ -64,6 +75,8 @@ public class Storywriter extends Application{
         this.appCloser = new ApplicationCloser();
         
         this.mainController = new MainController(this.dataController);
+        
+        
     }
     
     

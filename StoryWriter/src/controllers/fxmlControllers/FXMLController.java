@@ -32,4 +32,9 @@ public class FXMLController {
         
     }
     
+    
+    
+    protected void updateMenuBar(){
+        
+    }
 }

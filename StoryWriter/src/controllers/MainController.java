@@ -35,6 +35,14 @@ public class MainController {
     }
     
     
+    // Provides to caller, should be the main application, the fxml controller
+    // For the main root BorderPane
+    public FXMLController getFXMLController(){
+        return this.fxmlController;
+    }
+    
+    // Passes control the the fxml controllers and displays the main application
+    public void startApplication(){}
     
     // Performs pre-closing procedures
     public void exitApplication(){
