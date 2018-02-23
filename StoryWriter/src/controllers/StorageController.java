@@ -1,9 +1,10 @@
 /*
  * Developer:  Aaron Pierdon
  * Date:       Jan 27, 2018
- * Description: This class get program flow control eventually and when it gets
- * it, it will attempt to load a file located by by storyFile.getAbosolutePath();
+ * Description:
+
  */
+
 package controllers;
 
 import dataModel.Story;
@@ -14,14 +15,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import storywriter.Storywriter;
-
 import utility.fileUtility.Serializer;
 
 
-public class LoadFileController {
-    
-    
-    
+public class StorageController {
+
+        
     // Main entry point of interface...controller
     // Returns a loaded Story object or null
     
@@ -62,6 +61,9 @@ public class LoadFileController {
 
             
     }
+    
+        
+
     
     // Get the first line of the config file or null if not found
     private String getConfigFile(){
@@ -157,7 +159,18 @@ public class LoadFileController {
             return null;
         }
     }
+    
+    
+    public boolean saveFile(File targetFile){
+        try{
+            System.out.println(targetFile.getAbsoluteFile() + ".obj");
             
+            
+            return targetFile.createNewFile();
+        }catch(IOException e){
+            return false;
+        }
             
 
+    }
 }

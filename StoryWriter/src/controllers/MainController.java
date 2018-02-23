@@ -17,8 +17,8 @@ public class MainController {
     DataController dataController;
     
     // Storage Controllers
-    SaveFileController saveController;
-    LoadFileController loadController;
+    StorageController storageController;
+
     
     // Main FXML Controller
     FXMLController fxmlController;
@@ -26,8 +26,7 @@ public class MainController {
     // Constructor
     public MainController(DataController dataController){
         this.dataController = dataController;
-        this.saveController = new SaveFileController();
-        this.loadController = new LoadFileController();
+        this.storageController = new StorageController();
         
         // Pass a reference of this controller to the fxml controller
         // So the fxml controller can acces this.dataController and other controllers

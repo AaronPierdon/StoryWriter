@@ -3,46 +3,43 @@
 
 
 ## 1. MainController
-
-  1. Encapsulates all other controllers.
- 
-## 2. DataController
+    Encapsulates FXML, Data, and Storage Controllers.
   
-  1. Has a reference to the data model (a Story object).
-  2. Has methods that get/set values and objects in the story object.
+        1. MainFXMLController
+            This controller builds and handles events from the main view. This
+            controller extends TimerTask to monitor the state of sub-views and 
+            to update the dataModel when needed. This controller therefore needs to
+            to be passed a MainController, which has access to the data model.
 
-## 3. StorageController
+            The order of updating the view during the run() method, menu bar, will be navigation,
+            details, view pane, and then details. Only one view can be updated at once, so set 
+            a boolean to true for isUpdatingView.
 
-  1. Handles the saving or loading a Story object.
-    1. Will serialize object and the save to file.
-    2. Will deserialize object from a file and populate the data model with the contents.
-  2. Gets a MainController object when a method is invoked so the StorageController can access the data controller nested in the MainController.
-  3. Returns to MainController a value that represents a success or failure of saving the file.
-  
-## 4. MainFXMLController
+                MainFXMLController encapuslates:
 
-  1. Controlls the view of the main .fxml file/BorderPane.
-  2. Gets a a MainController object when MainFXML controller is invoked via method call or constructor.
-    1. The MainController object provides access to the nested DataController and thus the data model.
-  2. Has controllers that load and handle the .fxml files that make up the entire Program.
-    1. Each sub-FXMLController will handle one .fxml file and the actions generated from the interaction with that .fxml file's GUI.
+                1. MenuPaneController
+                    1. Builds and handles events from the MenuPane.fxml view.
+                    2. Has state variables: systemTimeLastChanged
+                2. NavigationPaneController
+                    1. Builds and handles events from the NavigationPane.fxml view.
+                    2. Has state variables: systemTimeLastChanged
+                3. ViewPaneController
+                    1. Builds and handles events from the ViewPane.fxml view.
+                    2. Has state variables: systemTimeLastChanged
+                4. DetaisPaneController
+                    1. Builds and handles events from the Deatils.fxml view.
+                    2. Has state variables: systemTimeLastChanged
+            
+        
 
-## 5. MenuPaneController
-  
-  1. Controls the view of the MenuBar.fxml and handles any events that are invoked via the MenuBar interface.
-  2. Has a MainFXMLController that can be used to populate the applications root BorderPane's TOP node as well as request other view-oriented procedures that are handles by the MainFXMLController.
-  
-## 6. NavigationPaneController
+        2. DataController
+            1. Encapsulates the data model and controls access to it.
 
-  1. Controls the view of the ViewPaneController.fxml and handles any events that are invoked via the ViewPaneController interface.
-  2. Has a MainFXMLController that can be used to populate the applications root BorderPane's LEFT node as well as request other view-oriented procedures that are handled by the MainFXMLController.
-  
-## 7. ViewPaneController
+        3. StorageController
+            1. Gets a MainController so it can access the data model.
+            2. Is responsible for serializing and/or deserializing objects
+            and making sure they are saved/load to/from files from the local
+            file system.
 
-  1. Controls the view of the NavigationPane.fxml and handles any events that are invoked via the NavigationPane interface.
-  2. Has a MainFXMLController that can be used to populate the applications root BorderPane's CENTER node as well as request other view-oriented procedures that are handled by the MainFXMLController.
 
-## 8. DetailsPaneController
 
-  1. Controls the view of the DetailsPaneController.fxml and handles any events that are invoked via the DetailsPaneController interface.
-  2. Has a MainFXMLController that can be used to populate the applications root BorderPane's RIGHT node as well as request other view-oriented procedures that are handled by the MainFXMLController.
