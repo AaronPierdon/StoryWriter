@@ -41,7 +41,9 @@ public class MainController {
     }
     
     // Passes control the the fxml controllers and displays the main application
-    public void startApplication(){}
+    public void startApplication(){
+        this.fxmlController.displayApplication();
+    }
     
     // Performs pre-closing procedures
     public void exitApplication(){

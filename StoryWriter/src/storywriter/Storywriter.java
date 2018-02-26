@@ -55,12 +55,15 @@ public class Storywriter extends Application{
         loader.setController(this.mainController.getFXMLController());
         VBox root = loader.load();
         
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root); 
+
         stage.setScene(scene);
         stage.show();
         
         // Control is now that of the main fxml controller by way of handling
         // Interaction withthe main fxml view and it's sub views
+        
+        this.mainController.startApplication();
         
     }
     
