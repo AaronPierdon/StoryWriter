@@ -79,9 +79,14 @@ public class FXMLController extends TimerTask{
     // Updates the views
     private void updateMenuBar(){
         isViewUpdating = true;
+        
+        // Use the menu controller to get the menubar.fxml content and 
+        // then put the MenuBar in the root at position 0, meaning the top for a 
+        // VBox
         MenuBar updatedMenu = menuController.getViewNode();
         updatedMenu.setUseSystemMenuBar(true);
         root.getChildren().add(0, updatedMenu);
+        
         isViewUpdating = false;
     }
     
